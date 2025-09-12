@@ -8,10 +8,10 @@ Datum: 08-09-2025
 ## 1. Titel en elevator pitch
 Titel: TowerPower
 
-Elevator pitch, Je verslaat monsters die jouw tower aan het einde van het pad proberen te verslaan. Je maakt je army sterker om ze te upgraden.
+Elevator pitch, Het spel is geweldig het geeft je nostalogie, als je wint krijg je een leuke verrassing die iedereen wilt natuurlijk en waarom zou je het niet willen spelen. 
 
 ## 2. Wat maakt jouw tower defense uniek
-Je krijgt een suprice aan het einde van de game als je wint.
+Bij mijn game heb je cool towers, enemys, map, en de UI. Ik heb al deze art zelf gemaakt!
 
 ## 3. Schets van je level en UI
 ![alt text](image.png)
@@ -24,13 +24,13 @@ Je schets bevat minimaal:
 5. Een legenda met symbolen of kleuren voor torens, vijanden, pad, basis en UI.
 
 ## 4. Torens
-Toren 1 GoonPatron, 10 Range, 20 Damage, GoonPatron heeft een zwaard en is sneller dan EdgePatron, kost 15 TowerPower coins.
+Toren 1 ZwaardPatron, 10 Range, 20 Damage, ZwaardPatron heeft een zwaard en is sneller dan EdgePatron, kost 15 TowerPower coins.
 
-Toren 2 EdgePatron, 7.5 Range, 30 Damage, EdgePatron heeft een Axe hij is sterker maar sloom. kost 30 TowerPower coins.
+Toren 2 WarriorPatron, 7.5 Range, 30 Damage, WarriorPatron heeft een Axe hij is sterker maar sloom. kost 30 TowerPower coins.
 
-Toren 3 DihPatron, 25 Range, 15 Damage, DihPatron heeft een boog. kost 20 TowerPower coins.
+Toren 3 BoogPatron, 25 Range, 15 Damage, BoogPatron heeft een boog. kost 20 TowerPower coins.
 
-Toren 4 67Patron, 17.5 Range, 20 Damage, 67Patron Schiet blizem dus hij is een wizard. kost 35 TowerPower coins.
+Toren 4 WizardPatron, 17.5 Range, 20 Damage, WizardPatron Schiet blizem. kost 35 TowerPower coins.
 
 Eventuele extra torens: Niks
 
@@ -39,7 +39,7 @@ Vijand 1 AlphaWolf, 15 Speed, 150 Health, Hij kan bijten, je krijgt 2.5 coins al
 
 Vijand 2 AlphaSigma, 10 Speed, 200 Health, Hij kan soms torens hun ability ontwijken. je krijgt 3.5 coins als je 1tje killed 
 
-Vijand 3 AlphaDih, 12 Speed, 125 Health, Hij heeft een boog net als DihPatron maar als hij schiet dan staat hij stil. je krijgt 1.5 coins als je 1tje killed 
+Vijand 3 AlphaBoog, 12 Speed, 125 Health, Hij heeft een boog net als DihPatron maar als hij schiet dan staat hij stil. je krijgt 1.5 coins als je 1tje killed 
 
 Eventuele extra vijanden: Niks
 
@@ -59,18 +59,18 @@ Beschrijf in drie tot vijf stappen wat de speler steeds doet.
 Bij elke wave komt er 25 meer health bij elke Vijand.
 
 ## 8. Risico’s en oplossingen volgens PIO
-- Probleem 1:
-- Impact:
-- Oplossing:
+- Probleem 1: Code UI werkt niet.
+- Impact: Werkt me game wel?
+- Oplossing: hulp vragen aan klasgenoten of online zoeken hoe ik het moet fixen.
 
-- Probleem 2:
-- Impact:
-- Oplossing:
+- Probleem 2: Enemys lopen niet.
+- Impact: Kan spel niet verder spelen.
+- Oplossing: Script verbeteren of een nieuwe script bedenken.
 
 
-- Probleem 3:
-- Impact:
-- Oplossing:
+- Probleem 3: Towers Spawnen niet.
+- Impact: Hoe moet ik enemys killen?
+- Oplossing: Script verbeteren of een nieuwe script bedenken.
   
 ## 9. Planning per sprint en mechanics
 Schrijf per sprint welke mechanics jij oplevert in de build. Denk aan voorbeelden zoals vijandbeweging over een pad, torens plaatsen, doel kiezen en schieten, waves starten, UI voor geld en levens, upgrades, jouw unieke feature.
@@ -87,7 +87,7 @@ Sprint 5 mechanics: UI, levens
 
 
 ## 10. Inspiratie
-KingDom Rush, ik had het vroeger gespeeld ik ga het niet precies het zelfde spel basis maken, want het is te ingewikkeld voor me man want ik doe het makkelijkste want ik er kan van maken.
+KingDom Rush, ik had het vroeger gespeeld, want toen ik dit speelde vond ik de art heel mooi en daarom heb ik dit soort art stijl toegevoegd aan mijn game, want dit geeft me nostalogie.
 
 ## 11. Technisch ontwerp mini
 
@@ -105,33 +105,33 @@ Tien vijanden lopen van start naar de goal zonder vastlopers en verbruiken elk �
 Alle tien vijanden bereiken achtereenvolgens elk waypoint binnen één seconde na elkaar.
 
 ### 11.1 Vijandbeweging over het pad
-- Keuze:
-- Risico:
-- Oplossing:
-- Acceptatie:
+- Keuze: Enemys spawnen er veel in.
+- Risico: Ze passen niet op de pad.
+- Oplossing: Enemys kleiner maken of het pad groter maken.
+- Acceptatie: Enemys een voor een laten spawnen of naast elkaar lopen.
 
 
 ### 11.2 Doel kiezen en schieten
-- Keuze:
-- Risico:
-- Oplossing:
-- Acceptatie:
+- Keuze: towers attacken en schieten
+- Risico: werkt animatie?
+- Oplossing: animatie testen en kijken of het weer werkt
+- Acceptatie: Animatie wanneer je schiet of aanvalt damage krijgt.
 
 ### 11.3 Waves en spawnen
-- Keuze:
-- Risico:
-- Oplossing:
-- Acceptatie:
+- Keuze: Enemys spawnen er veel in.
+- Risico: Ze kunnen niet meer lopen omdat er te veel enemys spawnen.
+- Oplossing: Code herschrijven en kijken of het weer werkt.
+- Acceptatie: spawnrate verminderen en niet alles tegelijk spawnen.
 
   
 ### 11.4 Economie en levens
-- Keuze:
-- Risico:
-- Oplossing:
-- Acceptatie:
+- Keuze: 100 hp kasteel het kasteel krijgt damage
+- Risico: gaat de hp van 100 naar 0 in 1 keer als een enemy het kasteel aanraakt?
+- Oplossing: testen en als dat wel zo is dat ik de code moet verbeteren
+- Acceptatie: 15 damage als de enemy de kasteel heeft bereikt.
 
 ### 11.5 UI basis
-- Keuze:
-- Risico:
-- Oplossing:
-- Acceptatie:
+- Keuze: UI is klikbaar
+- Risico: kan ik er op klikken en dan laten spawnen
+- Oplossing: Code herschrijven en kijken of het weer werkt.
+- Acceptatie: In UI Towers kiezen met geld en daar op spawn plekken laten spawnen.
