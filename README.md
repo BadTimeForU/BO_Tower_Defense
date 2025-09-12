@@ -45,7 +45,7 @@ Eventuele extra vijanden: Niks
 
 ## 6. Gameplay loop
 Beschrijf in drie tot vijf stappen wat de speler steeds doet.
-1. plaats eerste een GoonPatron wat die is het goedkoopste
+1. plaats eerste een ZwaardPatron wat die is het goedkoopste
 
 2. daarna als je je genoeg geld hebt koop andere towers
 
@@ -75,15 +75,11 @@ Bij elke wave komt er 25 meer health bij elke Vijand.
 ## 9. Planning per sprint en mechanics
 Schrijf per sprint welke mechanics jij oplevert in de build. Denk aan voorbeelden zoals vijandbeweging over een pad, torens plaatsen, doel kiezen en schieten, waves starten, UI voor geld en levens, upgrades, jouw unieke feature.
 
-Sprint 1 mechanics: vijandbeweging over pad
+Sprint 1 mechanics: vijandbeweging over pad, waves starten
 
 Sprint 2 mechanics: torens plaantsen, geld, upgrades
 
-Sprint 3 mechanics: schieten en aanvallen
-
-Sprint 4 mechanics: waves starten
-
-Sprint 5 mechanics: UI, levens
+Sprint 3 mechanics: schieten en aanvallen UI, levens
 
 
 ## 10. Inspiratie
