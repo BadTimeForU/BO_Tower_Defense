@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6665474293111170467}
   - component: {fileID: 3151189996188713299}
   - component: {fileID: 5648502263750883379}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WizardPatron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,15 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c58b5d56775844a80f512d99b5ffe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3
-  damage: 20
-  fireRate: 1
-  attackDelay: 0.15
-  usesProjectile: 0
+  cost: 85
+  range: 3.5
+  fireRate: 0.8
+  damage: 45
+  upgradedPrefab: {fileID: 5319254555233149884, guid: 127986862c9b10b4a8aabb8802cbb58f, type: 3}
+  upgradeCost: 95
   projectilePrefab: {fileID: 0}
-  projectileSpawnPoint: {fileID: 0}
-  projectileSpeed: 8
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  enemyTag: Enemy

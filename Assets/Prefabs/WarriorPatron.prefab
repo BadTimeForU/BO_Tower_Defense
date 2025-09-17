@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6127061274255151212}
   - component: {fileID: 1496887755512472524}
   - component: {fileID: 9192666419888247369}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WarriorPatron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,15 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c58b5d56775844a80f512d99b5ffe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3
-  damage: 20
-  fireRate: 1
-  attackDelay: 0.15
-  usesProjectile: 0
+  cost: 70
+  range: 5
+  fireRate: 2
+  damage: 35
+  upgradedPrefab: {fileID: 7019002434195397867, guid: 3f6f4be9f98c4834eac5b718e180caef, type: 3}
+  upgradeCost: 85
   projectilePrefab: {fileID: 0}
-  projectileSpawnPoint: {fileID: 0}
-  projectileSpeed: 8
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  enemyTag: Enemy

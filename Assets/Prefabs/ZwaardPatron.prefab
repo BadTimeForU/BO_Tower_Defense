@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2489172172189403870}
   - component: {fileID: 3951218802551778225}
   - component: {fileID: 8900537007863533332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ZwaardPatron
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -67,15 +67,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55c58b5d56775844a80f512d99b5ffe7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cost: 45
   range: 3
-  damage: 20
   fireRate: 1
-  attackDelay: 0.15
-  usesProjectile: 0
-  projectilePrefab: {fileID: 0}
-  projectileSpawnPoint: {fileID: 0}
-  projectileSpeed: 8
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  enemyTag: Enemy
+  damage: 25
+  upgradedPrefab: {fileID: 3643423685157691402, guid: d24272fe946fc5a49a7e931696327e3f, type: 3}
+  upgradeCost: 55
+  projectilePrefab: {fileID: 3760876956169579263, guid: 72fd4597c1e769341a3aaced906f8c72, type: 3}
