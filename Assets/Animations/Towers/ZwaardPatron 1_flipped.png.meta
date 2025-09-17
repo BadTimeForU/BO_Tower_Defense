@@ -1,0 +1,717 @@
+fileFormatVersion: 2
+guid: 79e4a6c3c967d5e42be1d1a7c8a8d249
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1684542258749752392
+    second: ZwaardPatron 1_flipped_0
+  - first:
+      213: -5504914626350919846
+    second: ZwaardPatron 1_flipped_1
+  - first:
+      213: 4411078543862106851
+    second: ZwaardPatron 1_flipped_2
+  - first:
+      213: 8413682519959233999
+    second: ZwaardPatron 1_flipped_3
+  - first:
+      213: 2161404700172163031
+    second: ZwaardPatron 1_flipped_4
+  - first:
+      213: -2554597063504330721
+    second: ZwaardPatron 1_flipped_5
+  - first:
+      213: -1197300145687626935
+    second: ZwaardPatron 1_flipped_6
+  - first:
+      213: -954234873526954263
+    second: ZwaardPatron 1_flipped_7
+  - first:
+      213: -729373824467883503
+    second: ZwaardPatron 1_flipped_8
+  - first:
+      213: 5339357050152240143
+    second: ZwaardPatron 1_flipped_9
+  - first:
+      213: 7938381262157312633
+    second: ZwaardPatron 1_flipped_10
+  - first:
+      213: -7286180109669830793
+    second: ZwaardPatron 1_flipped_11
+  - first:
+      213: 6207738827599721370
+    second: ZwaardPatron 1_flipped_12
+  - first:
+      213: 6545761267860471326
+    second: ZwaardPatron 1_flipped_13
+  - first:
+      213: -1522377503034086394
+    second: ZwaardPatron 1_flipped_14
+  - first:
+      213: -5331879448871054498
+    second: ZwaardPatron 1_flipped_15
+  - first:
+      213: -6576426410942619946
+    second: ZwaardPatron 1_flipped_16
+  - first:
+      213: -8488756646936248725
+    second: ZwaardPatron 1_flipped_17
+  - first:
+      213: 6312476137604656207
+    second: ZwaardPatron 1_flipped_18
+  - first:
+      213: 5551034309564146120
+    second: ZwaardPatron 1_flipped_19
+  - first:
+      213: 2240775979018166637
+    second: ZwaardPatron 1_flipped_20
+  - first:
+      213: 4989966892534182907
+    second: ZwaardPatron 1_flipped_21
+  - first:
+      213: -192040599266601530
+    second: ZwaardPatron 1_flipped_22
+  - first:
+      213: 2234066105585087067
+    second: ZwaardPatron 1_flipped_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_0
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 443
+        width: 347
+        height: 581
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bb3612adbd4f98e0800000000000000
+      internalID: -1684542258749752392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_1
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 451
+        width: 317
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5f4089405d9a93b0800000000000000
+      internalID: -5504914626350919846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_2
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 986
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea8f33909c473d30800000000000000
+      internalID: 4411078543862106851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_3
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 986
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5651f9ca763c470800000000000000
+      internalID: 8413682519959233999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_4
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 459
+        width: 296
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d71f998f1adefd10800000000000000
+      internalID: 2161404700172163031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_5
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 472
+        width: 358
+        height: 552
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f10819d618f3c8cd0800000000000000
+      internalID: -2554597063504330721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_6
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 0
+        width: 110
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94bf3ce6cd5526fe0800000000000000
+      internalID: -1197300145687626935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_7
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 940
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e6d2233070e1c2f0800000000000000
+      internalID: -954234873526954263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_8
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 910
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11aaf1cfe5eb0e5f0800000000000000
+      internalID: -729373824467883503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_9
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 804
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f044d4fa2f4391a40800000000000000
+      internalID: 5339357050152240143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_10
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 742
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972f086d2bbca2e60800000000000000
+      internalID: 7938381262157312633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_11
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 731
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77fec994bc942ea90800000000000000
+      internalID: -7286180109669830793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_12
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 710
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a933b7dd291562650800000000000000
+      internalID: 6207738827599721370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_13
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 614
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e7553313737da50800000000000000
+      internalID: 6545761267860471326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_14
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1
+        width: 343
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60c6b951abd6fdae0800000000000000
+      internalID: -1522377503034086394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_15
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 0
+        width: 342
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e53d5d804eb5106b0800000000000000
+      internalID: -5331879448871054498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_16
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 1
+        width: 383
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6de944cc507dbb4a0800000000000000
+      internalID: -6576426410942619946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_17
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 0
+        width: 267
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6ef0a21ec0e13a80800000000000000
+      internalID: -8488756646936248725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_18
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 438
+        width: 8
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4c2e0b2a9b6a9750800000000000000
+      internalID: 6312476137604656207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_19
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 430
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c1a39d3b4c390d40800000000000000
+      internalID: 5551034309564146120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_20
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 398
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d612b9a71e5d81f10800000000000000
+      internalID: 2240775979018166637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_21
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 308
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf3b576637cef3540800000000000000
+      internalID: 4989966892534182907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_22
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 139
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c5d24aa71cb55df0800000000000000
+      internalID: -192040599266601530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ZwaardPatron 1_flipped_23
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 87
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b52b324594ff00f10800000000000000
+      internalID: 2234066105585087067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,325 @@
+fileFormatVersion: 2
+guid: 1fc49c703d1958c4283d2571d568d1b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5470884401822131657
+    second: ChatGPT Image 12 sep 2025, 10_55_38-Picsart-BackgroundRemover_0
+  - first:
+      213: -4904593144306803794
+    second: ChatGPT Image 12 sep 2025, 10_55_38-Picsart-BackgroundRemover_1
+  - first:
+      213: -3344181829520433880
+    second: ChatGPT Image 12 sep 2025, 10_55_38-Picsart-BackgroundRemover_2
+  - first:
+      213: 5788050535025773690
+    second: ChatGPT Image 12 sep 2025, 10_55_38-Picsart-BackgroundRemover_3
+  - first:
+      213: 5332484431756952913
+    second: ChatGPT Image 12 sep 2025, 10_55_38-Picsart-BackgroundRemover_4
+  - first:
+      213: 5671655118864075942
+    second: ChatGPT Image 12 sep 2025, 10_55_38-Picsart-BackgroundRemover_5
+  - first:
+      213: -3130451138881692838
+    second: ChatGPT Image 12 sep 2025, 10_55_38-Picsart-BackgroundRemover_6
+  - first:
+      213: -995933869240241425
+    second: ChatGPT Image 12 sep 2025, 10_55_38-Picsart-BackgroundRemover_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BoogPatron_0
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 426
+        width: 169
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f21ba59c8b077748bbbff9465b4a1ce
+      internalID: -1617305114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoogPatron_1
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 426
+        width: 167
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911f10d7a5447fa46981a5b0b3df974b
+      internalID: -666459654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoogPatron_2
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 426
+        width: 177
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4478946497cd1e24fbbb452ccfd7851f
+      internalID: -1652847006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoogPatron_3
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 426
+        width: 191
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55911ca607e2e93419736955310d3c04
+      internalID: 117964063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoogPatron_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 69
+        width: 191
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9c26f07641f6c4ea8270f9edebb1fe
+      internalID: 1524108993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoogPatron_5
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 69
+        width: 217
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f482280dde87448b039506111e8fc3
+      internalID: 2034238141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoogPatron_6
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 69
+        width: 224
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd18fab7825f254f9dcf09183b7a396
+      internalID: -1999187958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoogPatron_7
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 69
+        width: 256
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da9d0d574660b245b0acc52144bc4c4
+      internalID: -1739302513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1de707b1cbafbe44db7a0af07e4cf763
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BoogPatron_0: -1617305114
+      BoogPatron_1: -666459654
+      BoogPatron_2: -1652847006
+      BoogPatron_3: 117964063
+      BoogPatron_4: 1524108993
+      BoogPatron_5: 2034238141
+      BoogPatron_6: -1999187958
+      BoogPatron_7: -1739302513
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
