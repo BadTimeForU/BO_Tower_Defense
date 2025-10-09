@@ -1,28 +1,43 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
     [Header("Tower Stats")]
-    public int cost = 10;               
-    public float range = 5f;           
-    public float fireRate = 1f;         
-    public int damage = 20;            
+    public int cost = 10;
+    public float range = 5f;
+    public float fireRate = 1f;
+    public int damage = 20;
 
     [Header("Upgrade Stats")]
-    public GameObject upgradedPrefab;   
+    public GameObject upgradedPrefab;
     public int upgradeCost = 20;
 
     [Header("Projectile")]
     public GameObject projectilePrefab;
 
+    [Header("Animation")]
+    public TowerAnimator towerAnimator; 
+
     private float fireCountdown = 0f;
     private Transform target;
+
+    void Start()
+    {
+        if (towerAnimator == null)
+            towerAnimator = GetComponent<TowerAnimator>();
+    }
 
     void Update()
     {
         FindTarget();
 
-        if (target == null) return;
+        if (target == null)
+        {
+            
+            if (towerAnimator != null)
+                towerAnimator.PlayIdle();
+            return;
+        }
 
         if (fireCountdown <= 0f)
         {
@@ -57,8 +72,20 @@ public class Tower : MonoBehaviour
 
     void Shoot()
     {
+        if (towerAnimator != null)
+            towerAnimator.PlayAttack();
+
         GameObject projectileGO = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         Projectile proj = projectileGO.GetComponent<Projectile>();
         if (proj != null) proj.Seek(target, damage);
+
+        Invoke(nameof(BackToIdle), 0.3f);
+    }
+
+    void BackToIdle()
+    {
+        if (towerAnimator != null)
+            towerAnimator.PlayIdle();
     }
 }
+

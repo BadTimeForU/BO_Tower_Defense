@@ -4,28 +4,30 @@ public class BuildManager : MonoBehaviour
 {
     public static BuildManager instance;
 
-    public TowerBlueprint selectedTower;
-
-    void Awake()
+    private void Awake()
     {
-        if (instance == null) instance = this;
-        else Destroy(gameObject);
+        if (instance != null)
+        {
+            Debug.LogError("Meer dan 1 BuildManager in de scene!");
+            return;
+        }
+        instance = this;
     }
 
-    public void SelectTowerToBuild(TowerBlueprint tower)
+    private GameObject towerToBuild;
+
+    public void SetTowerToBuild(GameObject tower)
     {
-        selectedTower = tower;
+        towerToBuild = tower;
     }
 
-    public void BuildTower(TowerSpot spot)
+    public GameObject GetTowerToBuild()
     {
-        if (selectedTower == null) return;
+        return towerToBuild;
+    }
 
-        
-        GameObject towerGO = Instantiate(selectedTower.prefab, spot.transform.position, Quaternion.identity);
-        GameManager.instance.AddCoins(-selectedTower.cost);
-
-        
-        spot.SetOccupied(true);
+    public void ClearTowerToBuild()
+    {
+        towerToBuild = null;
     }
 }

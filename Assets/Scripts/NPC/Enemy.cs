@@ -13,28 +13,39 @@ public class Enemy : MonoBehaviour
     private int waypointIndex = 0;
 
     [Header("Sprite Animation")]
-    public Sprite[] runSprites;    
-    public float fps = 10f;       
+    public Sprite[] runSprites;
+    public float fps = 10f;
     private int frameIndex = 0;
     private float frameTimer = 0f;
     private SpriteRenderer spriteRenderer;
 
-    
+    [Header("Flip bij bepaalde Waypoints")]
     public int[] flipWaypoints = { 2, 6, 14 };
+
+    private Transform endWaypoint; // Wordt automatisch gevonden met tag
 
     void Start()
     {
         currentHealth = maxHealth;
 
-        
+        // Vind alle waypoints
         targetWaypoint = Waypoints.points[0];
 
-        
+        // Zoek het einde via tag
+        GameObject endObj = GameObject.FindGameObjectWithTag("EndWaypoint");
+        if (endObj != null)
+        {
+            endWaypoint = endObj.transform;
+        }
+        else
+        {
+            Debug.LogWarning("Geen object met tag 'EndWaypoint' gevonden!");
+        }
+
+        // Sprite setup
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (runSprites.Length > 0)
-        {
             spriteRenderer.sprite = runSprites[0];
-        }
     }
 
     void Update()
@@ -43,9 +54,10 @@ public class Enemy : MonoBehaviour
         AnimateRun();
     }
 
-    
     void MoveAlongPath()
     {
+        if (targetWaypoint == null) return;
+
         Vector3 dir = targetWaypoint.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
@@ -57,6 +69,14 @@ public class Enemy : MonoBehaviour
 
     void GetNextWaypoint()
     {
+        // Controleer of we bij het EndWaypoint zijn
+        if (endWaypoint != null && Vector3.Distance(transform.position, endWaypoint.position) <= 0.5f)
+        {
+            ReachGoal();
+            return;
+        }
+
+        // Normaal verdergaan
         if (waypointIndex >= Waypoints.points.Length - 1)
         {
             ReachGoal();
@@ -66,11 +86,11 @@ public class Enemy : MonoBehaviour
         waypointIndex++;
         targetWaypoint = Waypoints.points[waypointIndex];
 
-        
+        // Flip sprite bij bepaalde waypoints
         if (System.Array.Exists(flipWaypoints, w => w == waypointIndex))
         {
             Vector3 scale = transform.localScale;
-            scale.x *= -1; 
+            scale.x *= -1;
             transform.localScale = scale;
         }
     }
@@ -81,15 +101,11 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // --- Combat ---
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-
         if (currentHealth <= 0)
-        {
             Die();
-        }
     }
 
     void Die()
@@ -98,7 +114,6 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    
     void AnimateRun()
     {
         if (runSprites.Length == 0) return;

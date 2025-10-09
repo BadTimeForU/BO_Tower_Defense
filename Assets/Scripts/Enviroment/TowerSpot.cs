@@ -1,19 +1,45 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TowerSpot : MonoBehaviour
 {
-    private bool isOccupied = false;
+    [Header("Tower Settings")]
+    public bool flipX = false;  
 
-    void OnMouseDown()
+    private GameObject currentTower;
+
+    private void OnMouseDown()
     {
-        if (!isOccupied && GameManager.instance.coins >= BuildManager.instance.selectedTower.cost)
+        GameObject towerToBuild = Shop.selectedTowerPrefab;
+
+        if (towerToBuild == null)
         {
-            BuildManager.instance.BuildTower(this);
+            Debug.Log("Geen toren geselecteerd!");
+            return;
         }
-    }
 
-    public void SetOccupied(bool value)
-    {
-        isOccupied = value;
+        if (currentTower != null)
+        {
+            Debug.Log("Hier staat al een toren!");
+            return;
+        }
+
+        
+        currentTower = Instantiate(towerToBuild, transform.position, transform.rotation);
+
+        
+        currentTower.transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
+
+       
+        if (flipX)
+        {
+            Vector3 localScale = currentTower.transform.localScale;
+            localScale.x *= -1;
+            currentTower.transform.localScale = localScale;
+        }
+
+        Debug.Log($"Toren geplaatst: {currentTower.name} (FlipX: {flipX})");
+
+        
+        Shop.selectedTowerPrefab = null;
     }
 }

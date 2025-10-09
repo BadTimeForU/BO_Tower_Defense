@@ -104,6 +104,7 @@ MonoBehaviour:
   speed: 0.5
   maxHealth: 100
   coinReward: 4
+  deathWaypointIndex: -1
   runSprites:
   - {fileID: 2107057364158979835, guid: 99cb19a66b3047b48b31585e73bd4bc8, type: 3}
   - {fileID: -2451154894803628837, guid: 99cb19a66b3047b48b31585e73bd4bc8, type: 3}

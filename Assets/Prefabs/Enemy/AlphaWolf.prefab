@@ -101,9 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e722009f32b0a74ea469e6a275000fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  speed: 0.8
   maxHealth: 100
   coinReward: 3
+  deathWaypointIndex: -1
   runSprites:
   - {fileID: -8167461542939925322, guid: cfb68663862537749b8154c6437b8912, type: 3}
   - {fileID: 273936807515006640, guid: cfb68663862537749b8154c6437b8912, type: 3}

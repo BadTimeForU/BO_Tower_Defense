@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 2489172172189403870}
   - component: {fileID: 3951218802551778225}
   - component: {fileID: 8900537007863533332}
+  - component: {fileID: -8608800660297096953}
+  - component: {fileID: 1205337811268509794}
   m_Layer: 6
   m_Name: ZwaardPatron
-  m_TagString: Untagged
+  m_TagString: Towerone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.2655354, y: -4.510987, z: -1.4757614}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -68,9 +70,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 45
-  range: 3
-  fireRate: 1
+  range: 2.5
+  fireRate: 3
   damage: 25
   upgradedPrefab: {fileID: 3643423685157691402, guid: d24272fe946fc5a49a7e931696327e3f, type: 3}
   upgradeCost: 55
   projectilePrefab: {fileID: 3760876956169579263, guid: 72fd4597c1e769341a3aaced906f8c72, type: 3}
+  towerAnimator: {fileID: 1205337811268509794}
+--- !u!212 &-8608800660297096953
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643423685157691402}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: -1522377503034086394, guid: 79e4a6c3c967d5e42be1d1a7c8a8d249, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.43, y: 4.42}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1205337811268509794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643423685157691402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5c2bc2c65112a54f9dff8257bc52fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idleSprites:
+  - {fileID: -3613466945300102455, guid: dee56560008796747a2158862616bba9, type: 3}
+  attackSprites:
+  - {fileID: 5983109248242937570, guid: 493f1ae43c7b716418a7b438a76ceb85, type: 3}
+  - {fileID: -3909436835658419446, guid: 493f1ae43c7b716418a7b438a76ceb85, type: 3}
+  - {fileID: 1668887179190786482, guid: 493f1ae43c7b716418a7b438a76ceb85, type: 3}
+  - {fileID: -6505618851945662452, guid: 493f1ae43c7b716418a7b438a76ceb85, type: 3}
+  frameRate: 7.5
+  spriteRenderer: {fileID: 0}
