@@ -104,7 +104,6 @@ MonoBehaviour:
   speed: 0.8
   maxHealth: 100
   coinReward: 3
-  deathWaypointIndex: -1
   runSprites:
   - {fileID: -8167461542939925322, guid: cfb68663862537749b8154c6437b8912, type: 3}
   - {fileID: 273936807515006640, guid: cfb68663862537749b8154c6437b8912, type: 3}
@@ -112,6 +111,7 @@ MonoBehaviour:
   - {fileID: 4212686398666200483, guid: cfb68663862537749b8154c6437b8912, type: 3}
   fps: 2
   flipWaypoints: 02000000060000000e000000
+  deathEffectPrefab: {fileID: 3588162591298096823, guid: 105ddf8687701a442bf8cb6a307ad35b, type: 3}
 --- !u!61 &-1490946073690973328
 BoxCollider2D:
   m_ObjectHideFlags: 0

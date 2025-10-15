@@ -22,16 +22,19 @@ public class Enemy : MonoBehaviour
     [Header("Flip bij bepaalde Waypoints")]
     public int[] flipWaypoints = { 2, 6, 14 };
 
-    private Transform endWaypoint; // Wordt automatisch gevonden met tag
+    private Transform endWaypoint;
+
+    [Header("Death Effect (8-bit particles)")]
+    public GameObject deathEffectPrefab;   
 
     void Start()
     {
         currentHealth = maxHealth;
 
-        // Vind alle waypoints
+        
         targetWaypoint = Waypoints.points[0];
 
-        // Zoek het einde via tag
+        
         GameObject endObj = GameObject.FindGameObjectWithTag("EndWaypoint");
         if (endObj != null)
         {
@@ -42,7 +45,7 @@ public class Enemy : MonoBehaviour
             Debug.LogWarning("Geen object met tag 'EndWaypoint' gevonden!");
         }
 
-        // Sprite setup
+        
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (runSprites.Length > 0)
             spriteRenderer.sprite = runSprites[0];
@@ -69,14 +72,14 @@ public class Enemy : MonoBehaviour
 
     void GetNextWaypoint()
     {
-        // Controleer of we bij het EndWaypoint zijn
+        
         if (endWaypoint != null && Vector3.Distance(transform.position, endWaypoint.position) <= 0.5f)
         {
             ReachGoal();
             return;
         }
 
-        // Normaal verdergaan
+        
         if (waypointIndex >= Waypoints.points.Length - 1)
         {
             ReachGoal();
@@ -86,7 +89,7 @@ public class Enemy : MonoBehaviour
         waypointIndex++;
         targetWaypoint = Waypoints.points[waypointIndex];
 
-        // Flip sprite bij bepaalde waypoints
+        
         if (System.Array.Exists(flipWaypoints, w => w == waypointIndex))
         {
             Vector3 scale = transform.localScale;
@@ -111,6 +114,14 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         GameManager.instance.AddCoins(coinReward);
+
+        
+        if (deathEffectPrefab != null)
+        {
+            GameObject effect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
+            Destroy(effect, 2f); 
+        }
+
         Destroy(gameObject);
     }
 
