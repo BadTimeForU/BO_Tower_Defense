@@ -4,7 +4,7 @@ public class Enemy : MonoBehaviour
 {
     [Header("Stats")]
     public float speed = 2f;
-    public int maxHealth = 100;
+    public int baseHealth = 100;          // basis health
     private int currentHealth;
     public int coinReward = 1;
 
@@ -28,13 +28,23 @@ public class Enemy : MonoBehaviour
     public GameObject deathEffectPrefab;
 
     [Header("Death Sound")]
-    public AudioClip deathSound;     
-    private AudioSource audioSource;   
+    public AudioClip deathSound;
+    private AudioSource audioSource;
+
+    private int waveBonus = 0; // extra HP per wave
 
     void Start()
     {
-        currentHealth = maxHealth;
+       
+        if (GameManager.instance != null)
+        {
+            waveBonus = (GameManager.instance.currentWave - 1) * 5;
+        }
 
+        
+        currentHealth = baseHealth + waveBonus;
+
+        
         targetWaypoint = Waypoints.points[0];
 
         GameObject endObj = GameObject.FindGameObjectWithTag("EndWaypoint");
@@ -96,7 +106,6 @@ public class Enemy : MonoBehaviour
         waypointIndex++;
         targetWaypoint = Waypoints.points[waypointIndex];
 
-        
         if (System.Array.Exists(flipWaypoints, w => w == waypointIndex))
         {
             Vector3 scale = transform.localScale;
@@ -122,19 +131,16 @@ public class Enemy : MonoBehaviour
     {
         GameManager.instance.AddCoins(coinReward);
 
- 
         if (deathEffectPrefab != null)
         {
             GameObject effect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
             Destroy(effect, 2f);
         }
 
-       
         if (deathSound != null && audioSource != null)
         {
             audioSource.PlayOneShot(deathSound);
         }
-
 
         Destroy(gameObject, 0.3f);
     }

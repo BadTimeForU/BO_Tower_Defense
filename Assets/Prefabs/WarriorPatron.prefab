@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9192666419888247369}
   - component: {fileID: 2259971145160259784}
   - component: {fileID: -4636167303395744106}
+  - component: {fileID: -6593374836634895827}
   m_Layer: 6
   m_Name: WarriorPatron
   m_TagString: Untagged
@@ -78,6 +79,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3760876956169579263, guid: 72fd4597c1e769341a3aaced906f8c72, type: 3}
   towerAnimator: {fileID: -4636167303395744106}
   shootSound: {fileID: 8300000, guid: b3e788d5d00340e4cadca87b728e3e66, type: 3}
+  upgradeSound: {fileID: 0}
+  upgradeUIPrefab: {fileID: 5600542440843090935, guid: e099be3cb39c6304aae109dee8c72eff, type: 3}
 --- !u!212 &2259971145160259784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -154,3 +157,49 @@ MonoBehaviour:
   - {fileID: 7306154392444348182, guid: 10424e846d5b74b4c829e8903d35394f, type: 3}
   frameRate: 5
   spriteRenderer: {fileID: 0}
+--- !u!61 &-6593374836634895827
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7019002434195397867}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4, y: 2.66}
+    newSize: {x: 2.4, y: 2.66}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.4, y: 2.66}
+  m_EdgeRadius: 0

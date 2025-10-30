@@ -25,19 +25,16 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        
         UIManager.instance.UpdateCoins(coins);
         UIManager.instance.UpdateLives(HP);
         UIManager.instance.UpdateWave(currentWave);
         UIManager.instance.UpdateEnemies(enemiesAlive);
 
-        
         if (cursorTexture != null)
         {
             Cursor.SetCursor(cursorTexture, hotspot, cursorMode);
         }
 
-       
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
@@ -46,6 +43,19 @@ public class GameManager : MonoBehaviour
     {
         coins += amount;
         UIManager.instance.UpdateCoins(coins);
+    }
+
+    public void SpendCoins(int amount)
+    {
+        if (coins >= amount)
+        {
+            coins -= amount;
+            UIManager.instance.UpdateCoins(coins);
+        }
+        else
+        {
+            Debug.LogWarning("Niet genoeg coins!");
+        }
     }
 
     public void LoseLife(int amount)

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8900537007863533332}
   - component: {fileID: -8608800660297096953}
   - component: {fileID: 1205337811268509794}
+  - component: {fileID: -6647841618147298831}
   m_Layer: 6
   m_Name: ZwaardPatron
   m_TagString: Towerone
@@ -78,6 +79,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 3760876956169579263, guid: 72fd4597c1e769341a3aaced906f8c72, type: 3}
   towerAnimator: {fileID: 1205337811268509794}
   shootSound: {fileID: 8300000, guid: 6c3707bbbb0cbbf4a934f572569fc11b, type: 3}
+  upgradeSound: {fileID: 0}
+  upgradeUIPrefab: {fileID: 5600542440843090935, guid: e099be3cb39c6304aae109dee8c72eff, type: 3}
 --- !u!212 &-8608800660297096953
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -154,3 +157,49 @@ MonoBehaviour:
   - {fileID: -6505618851945662452, guid: 493f1ae43c7b716418a7b438a76ceb85, type: 3}
   frameRate: 7.5
   spriteRenderer: {fileID: 0}
+--- !u!61 &-6647841618147298831
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3643423685157691402}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.43, y: 4.42}
+    newSize: {x: 3.43, y: 4.42}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 3.43, y: 4.42}
+  m_EdgeRadius: 0

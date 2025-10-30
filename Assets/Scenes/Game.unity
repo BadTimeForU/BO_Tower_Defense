@@ -7006,11 +7006,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefabs:
-  - {fileID: 3645380949826620618, guid: 5c08066911ea6db49af4bc5388d9c051, type: 3}
-  - {fileID: 665776913917452721, guid: cc9a13e77b4d374409dc3dac78bd3e70, type: 3}
-  - {fileID: 5362421617505672837, guid: 40c6084107dbe1f4a8be77d7915f0000, type: 3}
+  - {fileID: 8628211496218067392, guid: 40c6084107dbe1f4a8be77d7915f0000, type: 3}
+  - {fileID: 8404731881209009026, guid: cc9a13e77b4d374409dc3dac78bd3e70, type: 3}
+  - {fileID: 7319595007744154269, guid: 5c08066911ea6db49af4bc5388d9c051, type: 3}
   spawnPoint: {fileID: 766465255}
   timeBetweenWaves: 10
+  hpIncreasePerWave: 5
 --- !u!4 &1800031932
 Transform:
   m_ObjectHideFlags: 0
