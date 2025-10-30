@@ -102,8 +102,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.5
-  maxHealth: 100
-  coinReward: 4
+  maxHealth: 125
+  coinReward: 25
   runSprites:
   - {fileID: 2107057364158979835, guid: 99cb19a66b3047b48b31585e73bd4bc8, type: 3}
   - {fileID: -2451154894803628837, guid: 99cb19a66b3047b48b31585e73bd4bc8, type: 3}
@@ -112,6 +112,7 @@ MonoBehaviour:
   fps: 2
   flipWaypoints: 02000000060000000e000000
   deathEffectPrefab: {fileID: 3588162591298096823, guid: 105ddf8687701a442bf8cb6a307ad35b, type: 3}
+  deathSound: {fileID: 8300000, guid: 3c54b85fd7dc5534db310d650be357d5, type: 3}
 --- !u!61 &7084820634444752769
 BoxCollider2D:
   m_ObjectHideFlags: 0

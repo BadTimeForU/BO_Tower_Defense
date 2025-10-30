@@ -24,12 +24,28 @@ public class TowerSpot : MonoBehaviour
         }
 
         
-        currentTower = Instantiate(towerToBuild, transform.position, transform.rotation);
+        Tower towerScript = towerToBuild.GetComponent<Tower>();
+        if (towerScript == null)
+        {
+            Debug.LogError("Tower prefab mist het Tower-script!");
+            return;
+        }
 
         
+        if (GameManager.instance.coins < towerScript.cost)
+        {
+            Debug.Log("Niet genoeg geld om deze toren te plaatsen!");
+            return;
+        }
+
+        
+        GameManager.instance.AddCoins(-towerScript.cost);
+
+        
+        currentTower = Instantiate(towerToBuild, transform.position, transform.rotation);
         currentTower.transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
 
-       
+        
         if (flipX)
         {
             Vector3 localScale = currentTower.transform.localScale;
@@ -37,7 +53,7 @@ public class TowerSpot : MonoBehaviour
             currentTower.transform.localScale = localScale;
         }
 
-        Debug.Log($"Toren geplaatst: {currentTower.name} (FlipX: {flipX})");
+        Debug.Log($"Toren geplaatst: {currentTower.name} (FlipX: {flipX}) | Coins over: {GameManager.instance.coins}");
 
         
         Shop.selectedTowerPrefab = null;

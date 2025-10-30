@@ -70,13 +70,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 60
-  range: 10
-  fireRate: 0.8
+  range: 4
+  fireRate: 2
   damage: 25
   upgradedPrefab: {fileID: 6405392431421956009, guid: 6cbe7d1619344e9478e4e0ff67e276ca, type: 3}
   upgradeCost: 70
   projectilePrefab: {fileID: 3760876956169579263, guid: 72fd4597c1e769341a3aaced906f8c72, type: 3}
   towerAnimator: {fileID: -3917440767583967014}
+  shootSound: {fileID: 8300000, guid: 36d58091dde0ab94d8bff96bd351c352, type: 3}
 --- !u!212 &-791894070371020800
 SpriteRenderer:
   m_ObjectHideFlags: 0

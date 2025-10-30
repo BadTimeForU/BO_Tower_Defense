@@ -25,16 +25,18 @@ public class Enemy : MonoBehaviour
     private Transform endWaypoint;
 
     [Header("Death Effect (8-bit particles)")]
-    public GameObject deathEffectPrefab;   
+    public GameObject deathEffectPrefab;
+
+    [Header("Death Sound")]
+    public AudioClip deathSound;     
+    private AudioSource audioSource;   
 
     void Start()
     {
         currentHealth = maxHealth;
 
-        
         targetWaypoint = Waypoints.points[0];
 
-        
         GameObject endObj = GameObject.FindGameObjectWithTag("EndWaypoint");
         if (endObj != null)
         {
@@ -45,10 +47,17 @@ public class Enemy : MonoBehaviour
             Debug.LogWarning("Geen object met tag 'EndWaypoint' gevonden!");
         }
 
-        
+        // Sprite setup
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (runSprites.Length > 0)
             spriteRenderer.sprite = runSprites[0];
+
+        // Audio setup
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.playOnAwake = false;
     }
 
     void Update()
@@ -72,14 +81,12 @@ public class Enemy : MonoBehaviour
 
     void GetNextWaypoint()
     {
-        
         if (endWaypoint != null && Vector3.Distance(transform.position, endWaypoint.position) <= 0.5f)
         {
             ReachGoal();
             return;
         }
 
-        
         if (waypointIndex >= Waypoints.points.Length - 1)
         {
             ReachGoal();
@@ -115,14 +122,21 @@ public class Enemy : MonoBehaviour
     {
         GameManager.instance.AddCoins(coinReward);
 
-        
+ 
         if (deathEffectPrefab != null)
         {
             GameObject effect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
-            Destroy(effect, 2f); 
+            Destroy(effect, 2f);
         }
 
-        Destroy(gameObject);
+       
+        if (deathSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
+
+
+        Destroy(gameObject, 0.3f);
     }
 
     void AnimateRun()

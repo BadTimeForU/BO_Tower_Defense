@@ -16,7 +16,11 @@ public class Tower : MonoBehaviour
     public GameObject projectilePrefab;
 
     [Header("Animation")]
-    public TowerAnimator towerAnimator; 
+    public TowerAnimator towerAnimator;
+
+    [Header("Audio")]
+    public AudioClip shootSound;           
+    private AudioSource audioSource;       
 
     private float fireCountdown = 0f;
     private Transform target;
@@ -25,6 +29,13 @@ public class Tower : MonoBehaviour
     {
         if (towerAnimator == null)
             towerAnimator = GetComponent<TowerAnimator>();
+
+        // Audio setup
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+
+        audioSource.playOnAwake = false;
     }
 
     void Update()
@@ -33,7 +44,6 @@ public class Tower : MonoBehaviour
 
         if (target == null)
         {
-            
             if (towerAnimator != null)
                 towerAnimator.PlayIdle();
             return;
@@ -74,10 +84,14 @@ public class Tower : MonoBehaviour
     {
         if (towerAnimator != null)
             towerAnimator.PlayAttack();
+        
+        if (shootSound != null && audioSource != null)
+            audioSource.PlayOneShot(shootSound);
 
         GameObject projectileGO = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         Projectile proj = projectileGO.GetComponent<Projectile>();
-        if (proj != null) proj.Seek(target, damage);
+        if (proj != null)
+            proj.Seek(target, damage);
 
         Invoke(nameof(BackToIdle), 0.3f);
     }
@@ -88,4 +102,3 @@ public class Tower : MonoBehaviour
             towerAnimator.PlayIdle();
     }
 }
-

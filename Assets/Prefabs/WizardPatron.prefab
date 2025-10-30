@@ -77,6 +77,7 @@ MonoBehaviour:
   upgradeCost: 95
   projectilePrefab: {fileID: 3760876956169579263, guid: 72fd4597c1e769341a3aaced906f8c72, type: 3}
   towerAnimator: {fileID: 8770013344793320002}
+  shootSound: {fileID: 8300000, guid: 52b7d727d52cb7944a0e087fe5fd09ea, type: 3}
 --- !u!212 &-4751465961136379180
 SpriteRenderer:
   m_ObjectHideFlags: 0

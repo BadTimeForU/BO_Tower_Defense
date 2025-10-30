@@ -101,9 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e722009f32b0a74ea469e6a275000fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.8
+  speed: 1
   maxHealth: 100
-  coinReward: 3
+  coinReward: 20
   runSprites:
   - {fileID: -8167461542939925322, guid: cfb68663862537749b8154c6437b8912, type: 3}
   - {fileID: 273936807515006640, guid: cfb68663862537749b8154c6437b8912, type: 3}
@@ -112,6 +112,7 @@ MonoBehaviour:
   fps: 2
   flipWaypoints: 02000000060000000e000000
   deathEffectPrefab: {fileID: 3588162591298096823, guid: 105ddf8687701a442bf8cb6a307ad35b, type: 3}
+  deathSound: {fileID: 8300000, guid: 15c7912515469114e8fd1e0480588532, type: 3}
 --- !u!61 &-1490946073690973328
 BoxCollider2D:
   m_ObjectHideFlags: 0
