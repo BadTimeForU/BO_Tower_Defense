@@ -709,7 +709,31 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ZwaardPatron 1_flipped_0: -1684542258749752392
+      ZwaardPatron 1_flipped_1: -5504914626350919846
+      ZwaardPatron 1_flipped_10: 7938381262157312633
+      ZwaardPatron 1_flipped_11: -7286180109669830793
+      ZwaardPatron 1_flipped_12: 6207738827599721370
+      ZwaardPatron 1_flipped_13: 6545761267860471326
+      ZwaardPatron 1_flipped_14: -1522377503034086394
+      ZwaardPatron 1_flipped_15: -5331879448871054498
+      ZwaardPatron 1_flipped_16: -6576426410942619946
+      ZwaardPatron 1_flipped_17: -8488756646936248725
+      ZwaardPatron 1_flipped_18: 6312476137604656207
+      ZwaardPatron 1_flipped_19: 5551034309564146120
+      ZwaardPatron 1_flipped_2: 4411078543862106851
+      ZwaardPatron 1_flipped_20: 2240775979018166637
+      ZwaardPatron 1_flipped_21: 4989966892534182907
+      ZwaardPatron 1_flipped_22: -192040599266601530
+      ZwaardPatron 1_flipped_23: 2234066105585087067
+      ZwaardPatron 1_flipped_3: 8413682519959233999
+      ZwaardPatron 1_flipped_4: 2161404700172163031
+      ZwaardPatron 1_flipped_5: -2554597063504330721
+      ZwaardPatron 1_flipped_6: -1197300145687626935
+      ZwaardPatron 1_flipped_7: -954234873526954263
+      ZwaardPatron 1_flipped_8: -729373824467883503
+      ZwaardPatron 1_flipped_9: 5339357050152240143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

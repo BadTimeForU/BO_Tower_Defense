@@ -284,7 +284,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ZwaardPatron11_0: -5943403452086563844
+      ZwaardPatron11_1: -2793556403311310909
+      ZwaardPatron11_2: 2246536146300977893
+      ZwaardPatron11_3: 69200177739269221
+      ZwaardPatron11_4: 2863985619719380120
+      ZwaardPatron11_5: -1527951057271587415
+      ZwaardPatron11_6: -3613466945300102455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

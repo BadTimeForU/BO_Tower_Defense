@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BoogPatron 1_flipped_0: -2781446622552432814
+      BoogPatron 1_flipped_1: 9056116677887415989
+      BoogPatron 1_flipped_2: -1029352054754473751
+      BoogPatron 1_flipped_3: 5366422527312267158
+      BoogPatron 1_flipped_4: 4680877444237259832
+      BoogPatron 1_flipped_5: 1644735699799930679
+      BoogPatron 1_flipped_6: 7670930239117987539
+      BoogPatron 1_flipped_7: 9152789399189091018
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

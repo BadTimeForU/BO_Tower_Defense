@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      plasticpattern1-metalness_0: 5819397497289890848
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

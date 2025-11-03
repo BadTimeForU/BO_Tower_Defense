@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      WizardPatron 1_flipped_0: 5934119978114597871
+      WizardPatron 1_flipped_1: -7049794801906826562
+      WizardPatron 1_flipped_2: -3176606656366179492
+      WizardPatron 1_flipped_3: 1193591572333649967
+      WizardPatron 1_flipped_4: -6385598564695840658
+      WizardPatron 1_flipped_5: -677710500643508051
+      WizardPatron 1_flipped_6: 2541968368883526109
+      WizardPatron 1_flipped_7: 4209188455456624131
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
