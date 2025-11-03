@@ -8,7 +8,7 @@ Start Scene:
 Small Gameplay:
 ![alt text](BO.gif)
 
-Game Build: https://github.com/BadTimeForU/BO_Tower_Defense/blob/main/Assets/Build/BO_Tower_Defense.exe
+Game Build: [https://github.com/BadTimeForU/BO_Tower_Defense/blob/main/Assets/Build/BO_Tower_Defense.exe](https://github.com/BadTimeForU/BO_Tower_Defense/releases/tag/Game)
 
 
 
