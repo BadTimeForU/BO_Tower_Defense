@@ -1,10 +1,12 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     [Header("Stats")]
     public float speed = 2f;
-    public int baseHealth = 100;          // basis health
+    public int maxHealth = 100;
     private int currentHealth;
     public int coinReward = 1;
 
@@ -21,53 +23,39 @@ public class Enemy : MonoBehaviour
 
     [Header("Flip bij bepaalde Waypoints")]
     public int[] flipWaypoints = { 2, 6, 14 };
-
     private Transform endWaypoint;
 
-    [Header("Death Effect (8-bit particles)")]
+    [Header("Death Effect")]
     public GameObject deathEffectPrefab;
 
     [Header("Death Sound")]
     public AudioClip deathSound;
     private AudioSource audioSource;
-
-    private int waveBonus = 0; // extra HP per wave
+    
+    [SerializeField] private TextMeshProUGUI healthText;
 
     void Start()
     {
-       
-        if (GameManager.instance != null)
-        {
-            waveBonus = (GameManager.instance.currentWave - 1) * 5;
-        }
-
-        
-        currentHealth = baseHealth + waveBonus;
-
-        
+        currentHealth = maxHealth;
         targetWaypoint = Waypoints.points[0];
 
         GameObject endObj = GameObject.FindGameObjectWithTag("EndWaypoint");
         if (endObj != null)
-        {
             endWaypoint = endObj.transform;
-        }
-        else
-        {
-            Debug.LogWarning("Geen object met tag 'EndWaypoint' gevonden!");
-        }
 
-        // Sprite setup
         spriteRenderer = GetComponent<SpriteRenderer>();
         if (runSprites.Length > 0)
             spriteRenderer.sprite = runSprites[0];
 
-        // Audio setup
         audioSource = GetComponent<AudioSource>();
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
-
         audioSource.playOnAwake = false;
+        
+        UpdateHealthUi();
+
+
+        
     }
 
     void Update()
@@ -84,9 +72,7 @@ public class Enemy : MonoBehaviour
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);
 
         if (Vector3.Distance(transform.position, targetWaypoint.position) <= 0.2f)
-        {
             GetNextWaypoint();
-        }
     }
 
     void GetNextWaypoint()
@@ -117,12 +103,17 @@ public class Enemy : MonoBehaviour
     void ReachGoal()
     {
         GameManager.instance.LoseLife(1);
+       
         Destroy(gameObject);
     }
 
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
+        float normalizedHealth = Mathf.Clamp01((float)currentHealth / maxHealth);
+        UpdateHealthUi();
+
+
         if (currentHealth <= 0)
             Die();
     }
@@ -138,9 +129,9 @@ public class Enemy : MonoBehaviour
         }
 
         if (deathSound != null && audioSource != null)
-        {
             audioSource.PlayOneShot(deathSound);
-        }
+
+
 
         Destroy(gameObject, 0.3f);
     }
@@ -156,5 +147,10 @@ public class Enemy : MonoBehaviour
             frameIndex = (frameIndex + 1) % runSprites.Length;
             spriteRenderer.sprite = runSprites[frameIndex];
         }
+    }
+
+    private void UpdateHealthUi()
+    {
+        healthText.text = currentHealth.ToString(); 
     }
 }

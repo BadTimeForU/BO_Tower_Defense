@@ -24,12 +24,12 @@ public class Tower : MonoBehaviour
     public AudioClip upgradeSound;
     private AudioSource audioSource;
 
-    private float fireCountdown = 0f;
-    private Transform target;
-
     [Header("UI")]
     public GameObject upgradeUIPrefab;
     private GameObject activeUI;
+
+    private float fireCountdown = 0f;
+    private Transform target;
 
     void Start()
     {
@@ -60,6 +60,13 @@ public class Tower : MonoBehaviour
         }
 
         fireCountdown -= Time.deltaTime;
+
+        
+        if (activeUI != null)
+        {
+            Vector3 uiPos = transform.position + new Vector3(0, 1.1f, 0);
+            activeUI.transform.position = uiPos;
+        }
     }
 
     void FindTarget()
@@ -106,38 +113,7 @@ public class Tower : MonoBehaviour
             towerAnimator.PlayIdle();
     }
 
-    void OnMouseDown()
-    {
-        if (activeUI != null)
-        {
-            Destroy(activeUI);
-            activeUI = null;
-            return;
-        }
-
-        if (upgradeUIPrefab == null)
-        {
-            Debug.LogWarning("Upgrade UI prefab is niet ingesteld!");
-            return;
-        }
-
-        Vector3 uiPos = Camera.main.WorldToScreenPoint(transform.position + Vector3.up * 1.5f);
-        activeUI = Instantiate(upgradeUIPrefab, uiPos, Quaternion.identity, GameObject.Find("Canvas").transform);
-
-        Button upgradeBtn = activeUI.transform.Find("UpgradeButton").GetComponent<Button>();
-        Button closeBtn = activeUI.transform.Find("CloseButton").GetComponent<Button>();
-
-        upgradeBtn.onClick.AddListener(() =>
-        {
-            UpgradeTower();
-        });
-
-        closeBtn.onClick.AddListener(() =>
-        {
-            Destroy(activeUI);
-            activeUI = null;
-        });
-    }
+    
 
     public void UpgradeTower()
     {

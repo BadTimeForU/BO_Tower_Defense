@@ -483,7 +483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6718785812494581785
 RectTransform:
   m_ObjectHideFlags: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1984e444c19ae84fbc17ead24b182c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerUIPanel: {fileID: 5600542440843090935}
+  uiPanel: {fileID: 5600542440843090935}
   upgradeButton: {fileID: 8208179209741282676}
   closeButton: {fileID: 6694618132126707959}
 --- !u!1 &7436914265381055353

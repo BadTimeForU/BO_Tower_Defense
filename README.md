@@ -1,3 +1,52 @@
+[Mijn Trello] (https://trello.com/invite/b/68c7c0933eb372ed459c0b62/ATTIb4a98b9349f055f5ac55d27655bd52ac58B59D9A/towerpower)
+
+
+
+Start Scene:
+![alt text](image-1.png)
+
+Small Gameplay:
+![alt text](BO.gif)
+
+Game Build:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Sprint 0 - Game Design Document : Tower Defense
 Naam: Kevin Mei
 
